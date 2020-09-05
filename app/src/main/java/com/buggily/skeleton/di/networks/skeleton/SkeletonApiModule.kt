@@ -6,11 +6,13 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+import javax.inject.Singleton
 
 @Module
 @InstallIn(ApplicationComponent::class)
 object SkeletonApiModule {
 
     @Provides
+    @Singleton
     fun provideSkeletonApi(): SkeletonApi = SkeletonNetwork.api
 }
