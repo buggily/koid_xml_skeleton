@@ -1,0 +1,1 @@
+/Users/buggily/koid_xml_skeleton/buildSrc/build/classes/kotlin/main/Build$Versions.class:/Users/buggily/koid_xml_skeleton/buildSrc/build/classes/kotlin/main/Build.class:/Users/buggily/koid_xml_skeleton/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/buggily/koid_xml_skeleton/buildSrc/build/classes/kotlin/main/Versions.class
