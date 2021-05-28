@@ -1,10 +1,10 @@
 buildscript {
 
-    ext.kotlinVersion = '1.4.10'
-    ext.gradleVersion = '4.0.1'
+    ext.gradleVersion = '4.2.1'
+    ext.kotlinVersion = '1.5.10'
 
-    ext.hiltVersion = '2.28-alpha'
-    ext.navVersion = '2.3.0'
+    ext.hiltVersion = '2.36'
+    ext.navVersion = '2.3.5'
 
     repositories {
         google()
