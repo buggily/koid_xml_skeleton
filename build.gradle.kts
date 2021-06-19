@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        val gradleVersion: String = Versions.GRADLE
+        val gradleVersion = "7.0.0-beta03"
         val kotlinVersion: String = Versions.KOTLIN
 
         val hiltVersion: String = Versions.HILT

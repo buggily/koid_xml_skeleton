@@ -8,18 +8,20 @@ open class EventWithValue<T>(
 ) {
 
     private var _isHandled: Boolean = isHandled
+    private val isHandled: Boolean get() = _isHandled
 
-    private val isHandled: Boolean
-        get() = _isHandled
+    fun onEventIfUnhandled(onEventIfUnhandled: (T) -> Unit) {
+        getValueIfUnhandled()?.let { onEventIfUnhandled(it) }
+    }
 
-    fun getValueIfUnhandled(): T? = if (isHandled) {
+    private fun getValueIfUnhandled(): T? = if (isHandled) {
         null
     } else {
         handleValue()
     }
 
     private fun handleValue(): T {
-        _isHandled = true
+        setIsHandled()
         return value
     }
 
@@ -29,4 +31,12 @@ open class EventWithValue<T>(
     }
 
     override fun hashCode(): Int = Objects.hashCode(value)
+
+    private fun setIsHandled() {
+        setIsHandled(true)
+    }
+
+    private fun setIsHandled(isHandled: Boolean) {
+        _isHandled = isHandled
+    }
 }
